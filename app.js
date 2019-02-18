@@ -5,8 +5,25 @@ let answer = 0;
 let buttons = document.querySelector('.calc-buttons');
 let screen = document.querySelector('.screen');
 
+let code = [];
+window.addEventListener('keydown',function(e){
+  code.push(e.key);
+  
+  if ((code.length === 3) && (code[0]===code[1]  && code[1]===code[2]) && code[0] === "6"){
+    document.querySelector('.satimg').classList.toggle('activate');
+    code = [];
+  }
+  if (code.length === 3){
+    code = [];
+  }
+} ); 
+
+
+
 buttons.addEventListener('click',(e)=>{
   const audio = document.querySelector(`audio[data-key="${e.target.parentNode.getAttribute('data-key')}"]`);
+  if (!audio) return;
+  audio.currentTime = 0;
   audio.play();
 
   var element= document.querySelector("body");
