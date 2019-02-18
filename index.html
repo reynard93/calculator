@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="calc">
+    
+    <section class="screen">
+      0
+    </section>
+
+    <section class="calc-buttons">
+      <div data-key="1" class="calc-button-row 1">
+        <button class="calc-button double ">C</button>
+        <button class="calc-button">←</button>
+        <button class="calc-button">÷</button>
+      </div>
+      <div data-key="2" class="calc-button-row 2">
+        <button class="calc-button">7</button>
+        <button class="calc-button">8</button>
+        <button class="calc-button">9</button>
+        <button class="calc-button">×</button>
+      </div>
+      <div data-key="3" class="calc-button-row 3">
+        <button class="calc-button">4</button>
+        <button class="calc-button">5</button>
+        <button class="calc-button">6</button>
+        <button class="calc-button">-</button>
+      </div>
+      <div data-key= "4" class="calc-button-row 4">
+        <button class="calc-button">1</button>
+        <button class="calc-button">2</button>
+        <button class="calc-button">3</button>
+        <button class="calc-button">+</button>
+      </div>
+      <div data-key= "5" class="calc-button-row 5">
+        <button class="calc-button triple">0</button>
+        <button class="calc-button">=</button>
+      </div>
+    </section>
+  </div>
+  <script src="./app.js"></script>
+
+  <audio data-key="1" src="boom.wav"></audio>
+  <audio data-key="2" src="kick.wav"></audio>
+  <audio data-key="3" src="ride.wav"></audio>
+  <audio data-key="4" src="tink.wav"></audio>
+  <audio data-key="5" src="asked.mp3"></audio>
+</body>
+
+</html>
